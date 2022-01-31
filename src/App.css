@@ -1,9 +1,21 @@
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: white;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: black;
+}
+
 .Wrapper {
-  flex-wrap: wrap;
 }
 
 .Header {
-  background-color: gray;
+  background-color: #333333;
   width: 100%;
   height: 100px;
   /* border: 2px black solid;
@@ -11,6 +23,54 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+.Jobs-Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 210px;
+}
+
+.Jobs {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border: 10px #f8c5af solid;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.Jobs:not(:nth-child(3n)) {
+  margin-right: 2rem;
+}
+
+.Jobs:nth-child(1),
+.Jobs:nth-child(6) {
+  border: 10px red solid;
+}
+
+.Jobs:nth-child(2),
+.Jobs:nth-child(7) {
+  border: 10px solid #3ea535;
+}
+
+.Jobs:nth-child(3),
+.Jobs:nth-child(8) {
+  border: 10px solid #ffee00;
+}
+
+.Jobs:nth-child(4),
+.Jobs:nth-child(9) {
+  border: 10px solid #039fe3;
+}
+.Jobs .Type {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
 .Footer {
@@ -23,10 +83,9 @@
   justify-content: center;
   align-items: center;
   bottom: 0;
+  font-size: 18px;
 }
 
-.Jobs {
-  background-color: orange;
-  height: 100%;
-  width: 100%;
+.Footer span {
+  font-weight: bold;
 }
